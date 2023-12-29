@@ -8,7 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import App from './App';
 import LanguageProvider from '@locales/LanguageProvider';
 
-import '@assets/scss/index.scss';
+// import '@assets/scss/index.scss';
 
 render(
     <React.StrictMode>
