@@ -1,0 +1,22 @@
+@import "@assets/scss/global";
+.app-footer {
+    background: #dbdbdb;
+    text-align: center;
+    line-height: 16px;
+    // align-items: end;
+}
+.appFooter1{
+    // display: flex;
+    // flex: 2;
+    // flex-direction: column-reverse;
+    // justify-content: space-evenly;
+    // align-items: center;
+    // border-bottom: #0b0b0b;
+    background: #e7e7e7;
+    border-top: 2px solid #dbdbdb;
+  }
+  .horizontal_line {
+    border-top: 2px solid #f57e20;
+    marginBottom:3px;
+    boxShadow: 1px 1px 4px #f57e20;
+  }

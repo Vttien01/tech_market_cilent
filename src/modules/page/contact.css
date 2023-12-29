@@ -1,0 +1,43 @@
+.container2 {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "areaContact1 areaContact2";
+    background-image: url(@assets/images/background.png);
+    background-size: cover;
+    height: 750px;
+}
+
+.areaContact1 { grid-area: areaContact1;
+    animation: fadeInLeft 1s ease-in-out;
+ }
+
+.areaContact2 { grid-area: areaContact2;
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

@@ -1,0 +1,20 @@
+.Product{
+    margin: 20px 100px 20px 20px;
+    font-family: 'Poppins' ,sans-serif;
+  }
+  .itemCardBadge{
+    margin: 10px;
+  }
+.itemCard{
+    margin: 10px;
+    height: 400px;
+  }
+.itemCardImage{
+    height: 150px !important;
+    object-fit: scale-down;
+}
+demo-loadmore-list{
+    min-height: 350px;
+    position: fixed;
+    overflow: auto;
+}

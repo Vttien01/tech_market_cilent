@@ -1,0 +1,41 @@
+.container {  display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    grid-template-rows: 0fr 1fr 0fr 0fr 0fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    margin-left: 100px;
+    grid-template-areas:
+      "siderHome BannerHome BannerHome"
+      "contentFlask contentFlask contentFlask"
+      "contentTrend contentTrend contentTrend"
+      "contentProduct contentProduct contentProduct"
+      "contentProudctBonus contentProudctBonus contentProudctBonus";
+  }
+
+  .siderHome {
+    grid-area: siderHome;
+    width: 200px;
+    font-family: 'Poppins' ,sans-serif;
+    align-self: start;
+    margin-left: 15px;
+ }
+
+  .BannerHome {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: BannerHome;
+    padding-top: 0;
+ }
+
+  .contentFlask {
+    padding-top: 20px;
+    grid-area: contentFlask;
+    justify-self: stretch;
+    align-self: stretch;
+}
+
+  .contentTrend { grid-area: contentTrend; }
+
+  .contentProduct { grid-area: contentProduct; }
+
+  .contentProudctBonus { grid-area: contentProudctBonus; }

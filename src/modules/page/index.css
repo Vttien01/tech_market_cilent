@@ -1,0 +1,15 @@
+.Product{
+    margin-left: 20px;
+    margin-right: 100px;
+  }
+  .itemCardBadge{
+    margin: 10px;
+  }
+.itemCard{
+    margin: 10px;
+    height: 400px;
+  }
+.itemCardImage{
+    height: 150px !important;
+    object-fit: scale-down;
+}
