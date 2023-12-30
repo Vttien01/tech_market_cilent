@@ -36,6 +36,7 @@
         "axios": "^1.2.1",
         "babel-plugin-react-intl-auto": "^3.3.0",
         "buffer": "^6.0.3",
+        "chart.js": "^4.4.1",
         "classnames": "^2.3.2",
         "dayjs": "^1.11.7",
         "env-cmd": "^10.1.0",
