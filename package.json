@@ -1,10 +1,12 @@
 {
+    "homepage": "https://vttien01.github.io/tech_market_cilent",
     "name": "cms-template",
     "version": "0.1.0",
     "private": true,
     "scripts": {
         "postinstall": "cd .. && husky install source/.husky",
         "start": "env-cmd -f ./env/.dev craco start",
+        "build": "env-cmd -f ./env/.dev craco build",
         "prebuild:dev": "rm -rf build",
         "build:dev": "env-cmd -f ./env/.dev craco build",
         "build:beta": "env-cmd -f ./env/.beta craco build",
@@ -14,6 +16,8 @@
         "build:staging": "env-cmd -f ./env/.staging craco build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "lint": "eslint \"src/**/*.js\" --fix",
         "format": "prettier --write \"src/**/*.js\"",
         "i18n": "extract-react-intl-messages -l=en -d en -o src/locales --flat src/**/*.js"
@@ -89,5 +93,10 @@
             "npm run lint",
             "git add ."
         ]
+    },
+    "devDependencies": {
+        "@types/babel__core": "^7.20.5",
+        "gh-pages": "^6.1.1",
+        "typescript": "^5.3.3"
     }
 }
